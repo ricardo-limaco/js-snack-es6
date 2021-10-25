@@ -26,8 +26,7 @@ for (let i = 0; i < arrayBikes.length; i++) {
   const singleBike = arrayBikes[i];
 
   // Destructuring
-  const {name} = singleBike;
-  const {weight} = singleBike;
+  const {name, weight} = singleBike;
   console.log("Info bici:",name, weight); // Prova info bici
 
   if (weight < lightweight.weight) {
