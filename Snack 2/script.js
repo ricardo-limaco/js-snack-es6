@@ -31,10 +31,13 @@ function generateFouls(arrayTeam) {
   for (let i = 0; i < arrayTeam.length; i++) {
     const singleTeam = arrayTeam[i];
     
+    singleTeam.points = generateRandom(60, 200);
     singleTeam.fouls = generateRandom(60, 200);
+
   }
 };
 generateFouls(arrayTeam);
+console.log("Array completo:",arrayTeam);
 
 
 
@@ -50,10 +53,9 @@ function newArrayTeam(arrayTeam) {
 
     arrayFoulsTeam.push(nameFoulsTeam);
     
-    console.log(`Squadra: ${name}, Falli: ${fouls}`);
+    // console.log(`Squadra: ${name}, Falli: ${fouls}`);
   }
-
-  console.log("Array completo",arrayFoulsTeam);
+  console.log("Array nomi e falli: ",arrayFoulsTeam);
 };
 newArrayTeam(arrayTeam);
 
